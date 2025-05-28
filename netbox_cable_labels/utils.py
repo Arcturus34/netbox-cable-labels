@@ -1,9 +1,7 @@
 from dcim.models.cables import Cable
 
-try:
-    from extras.plugins.utils import get_plugin_config
-except ImportError:
-    from extras.plugins import get_plugin_config  # type: ignore
+from netbox.plugins.utils import get_plugin_config
+
 from jinja2 import Environment, BaseLoader
 
 
