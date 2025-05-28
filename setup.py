@@ -26,14 +26,13 @@ def get_version(rel_path) -> str | None:
 setup(
     author="Jonathan Senecal",
     author_email="contact@jonathansenecal.com",
-    python_requires=">=3.9",
+    python_requires=">=3.12",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
         "Natural Language :: English",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
-        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.12",
     ],
     name="netbox_cable_labels",
     version=get_version("netbox_cable_labels/__init__.py") or "unknown",
